@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9EAA" />
+      <stop offset="100%" stop-color="#E879A9" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#FFF9F2" stroke="#F8C8DC" stroke-width="4"/>
+  <!-- Birthday Cake Icon -->
+  <path d="M30 65 h40 v15 a4 4 0 0 1 -4 4 h-32 a4 4 0 0 1 -4 -4 z" fill="#F8C8DC"/>
+  <path d="M32 45 h36 v20 h-36 z" fill="#FFF" stroke="#FFDCC8" stroke-width="1.5"/>
+  <path d="M32 50 q6 6 12 0 q6 6 12 0 q6 6 12 0 v-5 h-36 z" fill="#E879A9"/>
+  <!-- Candle -->
+  <rect x="47" y="32" width="6" height="13" rx="2" fill="#E9DDFB"/>
+  <!-- Flame -->
+  <path d="M50 21 c-3 4 -3 7 0 10 c3 -3 3 -6 0 -10 z" fill="#FFB703"/>
+  <circle cx="50" cy="27" r="2" fill="#FFF3B0"/>
+  <!-- Sparkles -->
+  <circle cx="25" cy="28" r="2" fill="#E879A9"/>
+  <circle cx="75" cy="30" r="2.5" fill="#E879A9"/>
+  <circle cx="78" cy="65" r="1.5" fill="#FFB703"/>
+</svg>

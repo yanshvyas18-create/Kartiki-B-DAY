@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="grad-friend-portrait.jpg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE7F3"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="dots-friend-portrait.jpg" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#E879A9" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="600" fill="url(#grad-friend-portrait.jpg)"/>
+  <rect width="600" height="600" fill="url(#dots-friend-portrait.jpg)"/>
+  
+  <!-- Frame border -->
+  <rect x="25" y="25" width="550" height="550" rx="20" fill="none" stroke="#E879A9" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Center Decorative Circle -->
+  <circle cx="300" cy="260" r="110" fill="#FFFFFF" filter="drop-shadow(0 8px 16px rgba(85,48,71,0.1))"/>
+  <circle cx="300" cy="260" r="100" fill="#FCE7F3" stroke="#E879A9" stroke-width="3"/>
+  <text x="300" y="285" font-size="80" text-anchor="middle">👑</text>
+
+  <!-- Titles -->
+  <text x="300" y="420" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="bold" fill="#553047" text-anchor="middle">Kartiki ✨</text>
+  <text x="300" y="460" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="600" fill="#E879A9" text-anchor="middle">Birthday Star 🎀</text>
+  <text x="300" y="500" font-family="'Caveat', cursive" font-size="22" fill="#8E6E83" text-anchor="middle">[Drop your real photo here in public/images/]</text>
+
+  <!-- Sparkles -->
+  <circle cx="120" cy="120" r="4" fill="#E879A9"/>
+  <circle cx="480" cy="140" r="6" fill="#E879A9"/>
+  <circle cx="160" cy="460" r="5" fill="#E879A9"/>
+  <circle cx="460" cy="480" r="4" fill="#E879A9"/>
+</svg>
