@@ -103,19 +103,26 @@ personalization: {
 }
 ```
 
-### 2. Adding Real Photos of Kartiki:
-Drop your real photos into:
-- `public/images/friend/friend-portrait.jpg` (Hero and Final Surprise portrait)
-- `public/images/memories/memory-01.jpg`
-- `public/images/memories/memory-02.jpg`
-- `public/images/memories/funny-moment-01.jpg`
-- `public/images/memories/birthday-memory-01.jpg`
-- `public/images/memories/memory-05.jpg`
-- `public/images/memories/memory-06.jpg`
+### 2. Real Photos of Kartiki:
+The 10 real photographs of Kartiki are located in:
+👉 `public/images/kartiki/`
+- `kartiki-01-outdoor-white-dress.jpg`: Angel in white sharara with mehndi
+- `kartiki-02-sunlit-selfie.jpg`: Sunlit golden hour glow with floral embroidery
+- `kartiki-03-mirror-selfie.jpg`: The iconic mirror selfie fit check
+- `kartiki-04-closeup-white-top.jpg`: The 10/10 million-dollar smile (Hero portrait & gallery)
+- `kartiki-05-navy-star-outfit.jpg`: Starry night cozy cardigan outfit
+- `kartiki-06-with-white-kitten.jpg`: Cat Mom holding her fluffy white Persian kitten
+- `kartiki-07-black-and-red-traditional.jpg`: Desi royalty in velvet & red lehenga
+- `kartiki-08-white-and-blue-outfit.jpg`: Royal blue skirt & satin shirt celebration
+- `kartiki-09-pink-traditional-outfit.jpg`: Pretty in pink traditional chikankari (Final Surprise & gallery)
+- `kartiki-10-with-kitten-selfie.jpg`: Kitten cuddle selfie cuteness overload
 
-*(Note: Beautiful pastel illustrated placeholders are already included, so the site looks stunning even before you add real photos!)*
+All 10 photos are integrated across the **Hero Polaroid**, **Scrapbook Gallery (all 10 photos)**, **Timeline of Us**, and the **Final Surprise Gift Reveal**!
 
-### 3. Adding Background Music:
+### 3. Cute Kitten & Paw Stickers:
+- Subtle pastel cat stickers, sleeping kittens, peeking kittens, and paw prints are placed throughout the scrapbook, celebrating Kartiki's love for cats and kittens without obstructing buttons or text!
+
+### 4. Adding Background Music:
 Place any `.mp3` audio file at:
 `public/audio/birthday-tune.mp3`
 

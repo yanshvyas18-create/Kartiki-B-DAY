@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Mail, Heart, Sparkles } from 'lucide-react';
 import { birthdayConfig } from '../config/birthdayConfig';
 import { triggerBirthdayConfetti } from './ConfettiEffect';
+import { PeekingKittenSticker, CatPawIcon } from './CatStickers';
 
 interface WelcomeModalProps {
   onOpen: () => void;
@@ -45,6 +46,11 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ onOpen }) => {
           isOpening ? 'scale-95 opacity-0 -translate-y-6' : 'scale-100 opacity-100'
         }`}
       >
+        {/* Peeking kitten on modal top */}
+        <div className="absolute -top-7 right-10 pointer-events-none z-20">
+          <PeekingKittenSticker className="w-16 h-10" />
+        </div>
+
         {/* Washi tape decoration */}
         <div className="washi-tape washi-tape-peach"></div>
 
@@ -69,7 +75,8 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ onOpen }) => {
         {/* Decorative divider */}
         <div className="flex items-center justify-center gap-2 mb-6">
           <div className="h-[1px] w-12 bg-[#F8C8DC]"></div>
-          <Heart className="w-4 h-4 text-[#E879A9] fill-[#E879A9]" />
+          <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
+          <Heart className="w-3.5 h-3.5 text-[#E879A9] fill-[#E879A9]" />
           <div className="h-[1px] w-12 bg-[#F8C8DC]"></div>
         </div>
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Camera, Heart, ArrowDown } from 'lucide-react';
+import { Sparkles, Camera, ArrowDown } from 'lucide-react';
 import { birthdayConfig } from '../config/birthdayConfig';
+import { CatPawIcon, SleepingKittenSticker } from './CatStickers';
 
 interface BirthdayHeroProps {
   onExploreClick: () => void;
@@ -16,7 +17,7 @@ export const BirthdayHero: React.FC<BirthdayHeroProps> = ({ onExploreClick }) =>
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FCE7F3] border border-[#F8C8DC] text-[#553047] text-xs font-bold tracking-wider uppercase mb-6 shadow-xs animate-float">
         <span>🎀</span>
         <span>{birthdayConfig.hero.badgeText}</span>
-        <Heart className="w-3.5 h-3.5 text-[#E879A9] fill-[#E879A9]" />
+        <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
       </div>
 
       {/* Main Headline */}
@@ -34,6 +35,11 @@ export const BirthdayHero: React.FC<BirthdayHeroProps> = ({ onExploreClick }) =>
         {/* Washi tape on top */}
         <div className="washi-tape washi-tape-lavender"></div>
 
+        {/* Cute Sleeping Kitten Sticker in the corner */}
+        <div className="absolute -top-6 -left-5 z-20 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform">
+          <SleepingKittenSticker className="w-14 h-10" />
+        </div>
+
         {/* Polaroid frame */}
         <div className="polaroid-card rotate-[-2deg] hover:rotate-0 transition-transform duration-300">
           <div className="w-full aspect-square bg-[#FCE7F3] rounded-sm overflow-hidden relative flex items-center justify-center border border-pink-100">
@@ -44,6 +50,7 @@ export const BirthdayHero: React.FC<BirthdayHeroProps> = ({ onExploreClick }) =>
                 loading="eager"
                 onError={() => setImgError(true)}
                 className="w-full h-full object-cover"
+                style={{ objectPosition: 'center top' }}
               />
             ) : (
               <div className="flex flex-col items-center justify-center p-6 text-center text-[#553047]">

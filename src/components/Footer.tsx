@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { birthdayConfig } from '../config/birthdayConfig';
+import { CatPawIcon } from './CatStickers';
 
 export const Footer: React.FC = () => {
   return (
@@ -55,7 +56,7 @@ export const Footer: React.FC = () => {
             <span>1 November 2026</span>
             <span>•</span>
             <span className="flex items-center gap-1">
-              Unlimited Cake Guaranteed <Sparkles className="w-3 h-3 text-amber-400" />
+              Unlimited Cake & Kitty Love <CatPawIcon className="w-3 h-3 text-[#E879A9]" />
             </span>
           </div>
         </div>

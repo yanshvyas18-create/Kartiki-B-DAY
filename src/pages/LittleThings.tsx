@@ -7,14 +7,17 @@ import { SecretMessages } from '../components/SecretMessages';
 import { WishWall } from '../components/WishWall';
 import { EasterEggBadge } from '../components/EasterEggBadge';
 
+import { CatPawIcon } from '../components/CatStickers';
+
 export const LittleThings: React.FC = () => {
   return (
     <div className="py-8 px-4 sm:px-6 max-w-5xl mx-auto">
       {/* Page Header */}
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-[#FFDCC8] border border-orange-200 text-[#553047] text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#FFDCC8] border border-orange-200 text-[#553047] text-xs font-bold uppercase tracking-wider mb-3">
           <span>🎀</span>
           <span>Compliments & Whispers</span>
+          <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
         </div>
         <h1 className="font-serif-title text-3xl sm:text-5xl font-extrabold text-[#553047] leading-tight">
           {birthdayConfig.littleThings.heading}

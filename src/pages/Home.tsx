@@ -69,7 +69,7 @@ export const Home: React.FC = () => {
                 Photo Gallery & Memories
               </h3>
               <p className="text-xs text-[#8E6E83] mt-2 leading-relaxed">
-                Polaroids, hilarious candid shots aur friendship memory timeline.
+                Polaroids, real candid shots, adorable cat mom moments aur friendship memory timeline.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-pink-100 flex items-center text-xs font-bold text-[#E879A9]">

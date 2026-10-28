@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Coffee, Utensils, HeartHandshake, Heart, Calendar } from 'lucide-react';
 import { birthdayConfig } from '../config/birthdayConfig';
+import { CatPawIcon } from './CatStickers';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Sparkles,
@@ -78,6 +79,26 @@ export const MemoryTimeline: React.FC = () => {
                     <p className="text-xs sm:text-sm text-[#8E6E83] leading-relaxed">
                       {item.description}
                     </p>
+
+                    {/* Attached Memory Polaroid */}
+                    {item.photoUrl && (
+                      <div className="mt-4 pt-3 border-t border-pink-100 flex justify-center sm:justify-start">
+                        <div className="polaroid-card p-2 bg-white rounded-md shadow-xs border border-pink-200 w-full max-w-[200px] transform hover:rotate-0 hover:scale-105 transition-all -rotate-1">
+                          <div className="w-full aspect-[4/5] overflow-hidden rounded-xs bg-[#FCE7F3]">
+                            <img
+                              src={item.photoUrl}
+                              alt={item.title}
+                              loading="lazy"
+                              className="w-full h-full object-cover object-top"
+                            />
+                          </div>
+                          <div className="flex items-center justify-between pt-1.5 px-1 text-[11px] text-[#553047]">
+                            <span className="handwritten text-xs font-semibold">{item.tag}</span>
+                            <CatPawIcon className="w-3 h-3 text-[#E879A9]" />
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

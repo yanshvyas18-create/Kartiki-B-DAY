@@ -47,7 +47,23 @@ export const FloatingElements: React.FC = () => {
         <span className="text-2xl opacity-60">🎀</span>
       </div>
 
-      {/* Bottom Right Star */}
+      {/* Floating Cute Pastel Kitten Accent */}
+      <div 
+        className="absolute top-1/4 right-8 text-[#F8C8DC] animate-float-delayed"
+        style={{ animationDuration: '8.5s' }}
+      >
+        <span className="text-2xl opacity-50">🐱</span>
+      </div>
+
+      {/* Floating Paw Print Accent */}
+      <div 
+        className="absolute bottom-1/3 left-8 text-[#E879A9] animate-float"
+        style={{ animationDuration: '7s', animationDelay: '3s' }}
+      >
+        <span className="text-xl opacity-40">🐾</span>
+      </div>
+
+      {/* Bottom Right Star & Paw */}
       <div 
         className="absolute bottom-16 right-12 text-[#E9DDFB] animate-float-delayed"
         style={{ animationDuration: '9s' }}

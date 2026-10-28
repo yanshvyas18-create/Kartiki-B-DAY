@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Mail, MailOpen, Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { Mail, MailOpen, Sparkles, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { birthdayConfig } from '../config/birthdayConfig';
 import { triggerBirthdayConfetti } from './ConfettiEffect';
+import { CatPawIcon } from './CatStickers';
 
 export const BirthdayLetter: React.FC = () => {
   const { heading, intro, envelopeLabel, openPrompt, content, signature, continueButtonText } =
@@ -64,8 +65,10 @@ export const BirthdayLetter: React.FC = () => {
           <div className="washi-tape washi-tape-peach"></div>
 
           {/* Stamp Seal on top right */}
-          <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-[#FFF9F2] border-2 border-dashed border-[#E879A9] flex items-center justify-center text-[#E879A9] shadow-xs">
-            <Heart className="w-6 h-6 fill-pink-100" />
+          <div className="absolute top-6 right-6 flex items-center gap-2">
+            <div className="w-12 h-12 rounded-full bg-[#FFF9F2] border-2 border-dashed border-[#E879A9] flex items-center justify-center text-[#E879A9] shadow-xs">
+              <CatPawIcon className="w-6 h-6 text-[#E879A9]" />
+            </div>
           </div>
 
           {/* Letter Body Paragraphs */}

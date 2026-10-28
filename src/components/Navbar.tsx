@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Home, Image, Gamepad2, Sparkles, Mail, Gift, Menu, X, Heart } from 'lucide-react';
 import { MusicPlayer } from './MusicPlayer';
 import { birthdayConfig } from '../config/birthdayConfig';
+import { CatPawIcon } from './CatStickers';
 
 interface NavItem {
   name: string;
@@ -42,6 +43,7 @@ export const Navbar: React.FC = () => {
             <div className="flex flex-col">
               <span className="font-serif-title font-bold text-base sm:text-lg text-[#553047] leading-tight flex items-center gap-1.5">
                 {birthdayConfig.personalization.recipientName}'s Universe
+                <CatPawIcon className="w-3 h-3 text-[#E879A9]" />
                 <Heart className="w-3.5 h-3.5 text-[#E879A9] fill-[#E879A9] inline-block animate-pulse" />
               </span>
               <span className="text-[11px] text-[#8E6E83] font-medium tracking-wide">

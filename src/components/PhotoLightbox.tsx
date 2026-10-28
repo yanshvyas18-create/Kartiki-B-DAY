@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, Calendar, Heart } from 'lucide-react';
 import type { GalleryItem } from '../config/birthdayConfig';
+import { CatPawIcon } from './CatStickers';
 
 interface PhotoLightboxProps {
   item: GalleryItem;
@@ -124,9 +125,14 @@ export const PhotoLightbox: React.FC<PhotoLightboxProps> = ({
           )}
 
           <div className="mt-4 pt-3 border-t border-pink-100 flex items-center justify-between text-xs text-[#8E6E83]">
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-1.5">
               <Heart className="w-3.5 h-3.5 text-[#E879A9] fill-[#E879A9]" />
-              Kartiki Special Memory
+              <span>Kartiki Special Memory</span>
+              {item.url.includes('kitten') && (
+                <span className="inline-flex items-center gap-1 text-[10px] bg-pink-100 text-[#C94E7F] px-2 py-0.5 rounded-full font-bold">
+                  <CatPawIcon className="w-2.5 h-2.5 text-[#E879A9]" /> Cat Approved
+                </span>
+              )}
             </span>
             <span>Use ← → keys to navigate • Esc to close</span>
           </div>

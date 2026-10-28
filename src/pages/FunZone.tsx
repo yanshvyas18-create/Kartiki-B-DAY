@@ -7,6 +7,8 @@ import { CatchTheCake } from '../components/games/CatchTheCake';
 import { MemoryMatch } from '../components/games/MemoryMatch';
 import { PersonalityGame } from '../components/games/PersonalityGame';
 
+import { CatPawIcon } from '../components/CatStickers';
+
 type GameTab = 'quiz' | 'catchCake' | 'memory' | 'personality';
 
 export const FunZone: React.FC = () => {
@@ -23,9 +25,10 @@ export const FunZone: React.FC = () => {
     <div className="py-8 px-4 sm:px-6 max-w-5xl mx-auto">
       {/* Fun Zone Page Header */}
       <div className="text-center max-w-2xl mx-auto mb-10">
-        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-[#E9DDFB] border border-purple-200 text-[#553047] text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#E9DDFB] border border-purple-200 text-[#553047] text-xs font-bold uppercase tracking-wider mb-3">
           <Gamepad2 className="w-3.5 h-3.5 text-[#E879A9]" />
           <span>Arcade & Mini-Games</span>
+          <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
         </div>
         <h1 className="font-serif-title text-3xl sm:text-5xl font-extrabold text-[#553047] leading-tight">
           {birthdayConfig.funZone.heading}

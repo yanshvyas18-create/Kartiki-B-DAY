@@ -3,6 +3,7 @@ import { Gift, Sparkles, Home, Share2, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { birthdayConfig } from '../config/birthdayConfig';
 import { triggerBirthdayConfetti, triggerStarConfetti } from './ConfettiEffect';
+import { CatPawIcon, PeekingKittenSticker } from './CatStickers';
 
 export const SurpriseGift: React.FC = () => {
   const {
@@ -58,6 +59,7 @@ export const SurpriseGift: React.FC = () => {
         <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-[#FCE7F3] border border-pink-200 text-[#553047] text-xs font-bold uppercase tracking-wider mb-3">
           <Gift className="w-3.5 h-3.5 text-[#E879A9]" />
           <span>The Grand Finale</span>
+          <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
         </div>
         <h1 className="font-serif-title text-3xl sm:text-5xl font-extrabold text-[#553047] leading-tight">
           {heading}
@@ -71,6 +73,11 @@ export const SurpriseGift: React.FC = () => {
         /* CLOSED INTERACTIVE GIFT BOX */
         <div className="paper-card p-8 sm:p-14 border-2 border-[#E879A9] shadow-xl max-w-md mx-auto relative group">
           <div className="washi-tape washi-tape-peach"></div>
+
+          {/* Peeking Kitten behind Gift Box */}
+          <div className="absolute -top-7 right-6 pointer-events-none z-20 group-hover:scale-110 transition-transform">
+            <PeekingKittenSticker className="w-16 h-12" />
+          </div>
 
           {/* 3D-Like Gift Box Graphic */}
           <div className="relative w-36 h-36 mx-auto mb-8 cursor-pointer select-none" onClick={handleOpenGift}>
@@ -118,16 +125,17 @@ export const SurpriseGift: React.FC = () => {
             </span>
           </div>
 
-          {/* Optional Featured Photo Polaroid */}
+          {/* Featured Photo Polaroid with preserved aspect ratio */}
           {featuredPhotoUrl && (
-            <div className="max-w-[220px] mx-auto mb-8 polaroid-card -rotate-1">
-              <div className="aspect-square bg-[#FCE7F3] rounded-sm overflow-hidden flex items-center justify-center">
+            <div className="max-w-[240px] mx-auto mb-8 polaroid-card -rotate-1">
+              <div className="aspect-[4/5] bg-[#FCE7F3] rounded-sm overflow-hidden flex items-center justify-center">
                 {!imgError ? (
                   <img
                     src={featuredPhotoUrl}
                     alt="Kartiki & Bestie"
                     onError={() => setImgError(true)}
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center top' }}
                   />
                 ) : (
                   <div className="text-center p-4">
@@ -136,8 +144,9 @@ export const SurpriseGift: React.FC = () => {
                   </div>
                 )}
               </div>
-              <p className="handwritten text-lg text-[#553047] text-center pt-2 font-semibold">
-                Forever Besties 🫶
+              <p className="handwritten text-lg text-[#553047] text-center pt-2 font-semibold flex items-center justify-center gap-1.5">
+                <span>Forever Besties 🫶</span>
+                <CatPawIcon className="w-3.5 h-3.5 text-[#E879A9]" />
               </p>
             </div>
           )}

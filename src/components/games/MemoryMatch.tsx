@@ -14,10 +14,10 @@ interface CardItem {
 const CARD_SYMBOLS = [
   { symbol: '🎂', name: 'Cake' },
   { symbol: '🎀', name: 'Pink Bow' },
+  { symbol: '🐱', name: 'White Kitten' },
+  { symbol: '🐾', name: 'Cat Paw' },
   { symbol: '👑', name: 'Crown' },
-  { symbol: '🎁', name: 'Gift' },
   { symbol: '💖', name: 'Heart' },
-  { symbol: '🥳', name: 'Party' },
 ];
 
 export const MemoryMatch: React.FC = () => {
